@@ -101,3 +101,8 @@
   - Lydon Factorization
   - Z Algorithm
 </details>
+
+### Contact
+Email: dscvssutburla@gmail.com
+Assigned Person: Aitik Dandapat
+Email: aitik2000@gmail.com
