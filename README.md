@@ -1,6 +1,6 @@
 <h1 align="center">Master PyAlgo</h1>
 <div align="center">
-  <strong>Mastering Algorithm and Competitive Programming in Python</strong>
+  <strong>Mastering Algorithm and Competitive Programming in Python, PYPY</strong>
 </div>
 
 
