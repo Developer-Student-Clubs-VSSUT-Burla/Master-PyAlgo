@@ -35,69 +35,69 @@
 <details>
   <summary>Data Structures</summary>
 
-  - [Bit Array]
-  - [Binary Indexed (Fenwick) Tree]
-  - [Fractions]
-  - [Continued Fractions]
-  - [Disjoint-Set (Union Find) Data Structure]
-  - [Generic Nodes]
-  - [Linked List]
-  - [Range Query Data Structure]
-  - [(Lazy) Segment Tree]
-  - [Persistent Segment Tree]
-  - [Sorted List]
-  - [Treap]
-  - [Trie Tree]
-  - [2-satisfiability Template]
+  - Bit Array
+  - Binary Indexed (Fenwick) Tree
+  - Fractions
+  - Continued Fractions
+  - Disjoint-Set (Union Find) Data Structure
+  - Generic Nodes
+  - Linked List
+  - Range Query Data Structure
+  - (Lazy) Segment Tree
+  - Persistent Segment Tree
+  - Sorted List
+  - Treap
+  - Trie Tree
+  - 2-satisfiability Template
 </details>
 
 <details>
   <summary>Geometry</summary>
 
-  - [Convex Hull]
-  - [Line Functions]
-  - [Polygon Functions]
-  - [Vector Functions]
+  - Convex Hull
+  - Line Functions
+  - Polygon Functions
+  - Vector Functions
 </details>
 
 <details>
   <summary>Graphs</summary>
 
-  - [Bellman-Ford Algorithm]
-  - [Breadth First Search]
-  - [Connected Components Search]
-  - [Brent's Algorithm for Cycle Detection]
-  - [Depth First Search]
-  - [Dijkstra's Algorithm]
-  - [Eulerian Path]
-  - [Path Constructor]
-  - [Floyd-Warshall Algorithm]
-  - [Bipartite Graph Check]
-  - [Kruskal's Algorithm with Disjoin Set Union]
-  - [Prim's Algorithm]
-  - [Tarjan's Algorithm]
-  - [Topological Sorting]
+  - Bellman-Ford Algorithm
+  - Breadth First Search
+  - Connected Components Search
+  - Brent's Algorithm for Cycle Detection
+  - Depth First Search
+  - Dijkstra's Algorithm
+  - Eulerian Path
+  - Path Constructor
+  - Floyd-Warshall Algorithm
+  - Bipartite Graph Check
+  - Kruskal's Algorithm with Disjoin Set Union
+  - Prim's Algorithm
+  - Tarjan's Algorithm
+  - Topological Sorting
 </details>
 
 <details>
   <summary>Numerical</summary>
 
-  - [Linear Recurrence Template]
-  - [Hill Climbing Algorithm]
-  - [Approximate Integration]
-  - [Polynomial Interpolation]
-  - [Integer Roots]
-  - [Binary Search]
+  - Linear Recurrence Template
+  - Hill Climbing Algorithm
+  - Approximate Integration
+  - Polynomial Interpolation
+  - Integer Roots
+  - Binary Search
 </details>
 
 <details>
   <summary>Strings</summary>
 
-  - [Knuth–Morris–Pratt Algorithm]
-  - [Longest Common/Palindromic Subsequences]
-  - [Longest Common Substring]
-  - [Longest Palindromic Substring]
-  - [Manacher's Algorithm]
-  - [Lydon Factorization]
-  - [Z Algorithm]
+  - Knuth–Morris–Pratt Algorithm
+  - Longest Common/Palindromic Subsequences
+  - Longest Common Substring
+  - Longest Palindromic Substring
+  - Manacher's Algorithm
+  - Lydon Factorization
+  - Z Algorithm
 </details>
