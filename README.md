@@ -17,19 +17,19 @@
 <details>
   <summary>Algebra</summary>
 
-  - [(Multivariable) Chinese Remainder Theorem]
-  - [Discrete Logarithm]
-  - [LCM and GCD]
-  - [Integer Factorization]
-  - [Fast Fourier Transform]
-  - [Fast Subset Transform]
-  - [Number Theoretic Transform]
-  - [Deterministic Miller-Rabin Primality Test]
-  - [Tonelli–Shanks Algorithm]
-  - [Generalized Modular Inverse]
-  - [Euler's Phi Function]
-  - [Primitive Root]
-  - [Sieve of Eratosthenes]
+  - (Multivariable) Chinese Remainder Theorem
+  - Discrete Logarithm
+  - LCM and GCD
+  - Integer Factorization
+  - Fast Fourier Transform
+  - Fast Subset Transform
+  - Number Theoretic Transform
+  - Deterministic Miller-Rabin Primality Test
+  - Tonelli–Shanks Algorithm
+  - Generalized Modular Inverse
+  - Euler's Phi Function
+  - Primitive Root
+  - Sieve of Eratosthenes
 </details>
 
 <details>
