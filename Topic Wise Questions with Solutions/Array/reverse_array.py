@@ -10,13 +10,10 @@
 
 
 def reverseList(A, start, end):
-	while start < end:
-		A[start], A[end] = A[end], A[start]
-		start += 1
-		end -= 1
+	return A.reverse()
 
 # Driver function to test above function
-A = list(map(int,input().split("")))
+A = list(map(int,input().split(" ")))
 print(A)
 reverseList(A, 0, len(A))
 print("Reversed list is")
