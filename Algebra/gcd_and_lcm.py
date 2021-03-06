@@ -1,27 +1,17 @@
-from functools import reduce
+# Python program to find LCM AND GCD of two numbers
+#WE KNOW THAT (a x b) = GCD(a,b) * LCM (a,b)
 
+def gcd(a,b):
+	if a == 0:
+		return b
+	return gcd(b % a, a)
 
-def gcd(x, y):
-    """greatest common divisor of x and y"""
-    while y:
-        x, y = y, x % y
-    return x
+# Function to return LCM of two numbers
+def lcm(a,b):
+	return (a / gcd(a,b))* b
 
-
-def extended_gcd(a, b):
-    """returns gcd(a, b), s, r s.t. a * s + b * r == gcd(a, b)"""
-    s, old_s = 0, 1
-    r, old_r = b, a
-    while r:
-        q = old_r // r
-        old_r, r = r, old_r - q * r
-        old_s, s = s, old_s - q * s
-    return old_r, old_s, (old_r - old_s * a) // b if b else 0
-
-
-gcdm = lambda *args: reduce(gcd, args, 0)
-
-lcm = lambda a, b: a * b // gcd(a, b)
-
-lcmm = lambda *args: reduce(lcm, args, 1)
-© 2021 GitHub, Inc.
+# Driver program to test above function
+a = 15
+b = 20
+print('LCM of', a, 'and', b, 'is', lcm(a, b))
+print('HCF of', a, 'and', b, 'is', gcd(a, b))
