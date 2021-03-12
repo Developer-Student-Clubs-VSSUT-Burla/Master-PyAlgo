@@ -1,13 +1,4 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[1]:
-
-
 import random
-
-
-# In[2]:
 
 
 class sorting_algo:
@@ -235,9 +226,6 @@ def main():
 
 if __name__ == "__main__":
     main()
-
-
-# In[ ]:
 
 
 
