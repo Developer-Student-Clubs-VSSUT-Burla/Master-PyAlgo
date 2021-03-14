@@ -16,8 +16,8 @@ def reverseList(A, start, end):
 		end -= 1
 
 # Driver function to test above function
-A = list(map(int,input().split("")))
+A = list(map(int,input().split()))
 print(A)
-reverseList(A, 0, len(A))
-print("Reversed list is")
-print(A)
+reverseList(A, 0, len(A)-1)
+print(f"Reversed list is:{A}")
+#print(A)
