@@ -1,0 +1,35 @@
+## KADANE'S ALGOITHM ##
+
+class solution
+ def maxSubArray(self, A):
+        length=len(A) 
+        csum=A[0]
+        maxsum=A[0]
+        start=1
+        end=1
+        maxstart=1
+        maxend=1
+        i=1
+        while(i<length):
+            csum=max(A[i],csum+A[i])
+            maxsum=max(csum,maxsum)
+            i=i+1
+        
+        return maxsum
+
+
+
+
+/* 
+    Test Case : 
+
+    Input :	 [-2, 1, -3, 4, -1, 2, 1, -5, 4]
+    		
+
+    Output : 6	
+
+    Time Complexity:O(n) The time taken by KADANE ALGORITHM depends upon the input array and partition strategy. Following are three cases:
+    	
+
+    Space Complexity: O(1)
+*/
