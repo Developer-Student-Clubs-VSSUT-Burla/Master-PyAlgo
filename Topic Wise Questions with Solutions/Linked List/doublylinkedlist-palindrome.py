@@ -28,19 +28,19 @@ class Node:
 class DoublyLinkedList:
 
     @staticmethod
-    def print(node):
+    def display(node):
 
         '''Reversing the string'''
-        rev_key = ""
+        rev_string = ""
         while node:
-            rev_key += node.data
+            rev_string += node.data
             node = node.next
-        return rev_key
+        return rev_string
 
     def __init__(self):
         self.head = None
 
-    def push(self, new_data):
+    def add(self, new_data):
 
         ''' Adding new node in the front of the list '''
         new_node = Node(new_data)
@@ -62,14 +62,14 @@ class DoublyLinkedList:
 if __name__ == "__main__":
 
     llist = DoublyLinkedList()
-    keys = input("Enter the string : ")
+    string = input("Enter the string : ")
 
-    for i in reversed(range(len(keys))):
-        llist.push(keys[i])
+    for i in reversed(range(len(string))):
+        llist.add(string[i])
 
-    rev_keys = llist.print(llist.head)
+    rev_string = llist.display(llist.head)
 
-    if keys == rev_keys:
+    if string == rev_string:
         print("Is Palindrome")
     else:
         print("Not a Palindrome")
