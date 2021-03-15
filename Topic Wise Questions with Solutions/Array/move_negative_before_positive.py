@@ -38,7 +38,7 @@ def move_negative_before_positive(arr):
     return arr
 
 # Driver function to test above function
-arr = list(map(int,input().split("")))
+arr = list(map(int,input().split()))
 print("input array :")
 print(arr)
 print("output array:")
