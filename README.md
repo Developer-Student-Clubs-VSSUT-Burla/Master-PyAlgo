@@ -100,6 +100,8 @@
   - Manacher's Algorithm
   - Lydon Factorization
   - Z Algorithm
+  - Remove Duplicate Letters
+
 </details>
 
 ##
