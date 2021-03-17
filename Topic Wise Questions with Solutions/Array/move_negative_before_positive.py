@@ -37,8 +37,10 @@ def move_negative_before_positive(arr):
     
     return arr
 
+
 # Driver function to test above function
-arr = list(map(int,input().split()
+#input = "-1, 1, 2, -2, 3, -3"
+arr = list(map(int,input().split(",")))
 print("input array :")
 print(arr)
 print("output array:")
