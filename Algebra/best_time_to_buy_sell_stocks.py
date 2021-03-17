@@ -21,7 +21,7 @@ else:
     for i in range(1,n):
         min_price = min(prices[i], min_price)
         profit = prices[i]-min_price
-        max_profit = max(profit, max_proft)
+        max_profit = max(profit, max_profit)
 
     print("The maximum profit would be {}".format(max_profit))
         
