@@ -13,7 +13,7 @@ def linearsearch(arr,ele):
 array=list(map(int,input('Input some numbers : ').split()))
 element=int(input('Enter element to search : '))
 a=linearsearch(array,element)
-if(a>0):
+if(a>=0):
     print('Element is found at index ',a)
 else:
     print('Element is not present in array')
