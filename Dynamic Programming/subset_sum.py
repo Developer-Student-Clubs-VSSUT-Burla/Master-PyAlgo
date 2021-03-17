@@ -1,17 +1,4 @@
-"""
-SAMPLE INPUT AND OUTPUT
-
-Enter size of array:
-6
-Enter elements of array: 
-3 34 4 12 5 2
-Enter sum: 
-9
-Subset with given sum is present
-
-Time Complexity: O(sum * size of array)
-Space Complexity: O(sum * size of array)
-"""
+"""Subset Sum Problem """
 
 def subsetSum(arr, size, S):
     # A 2D List containing boolean values, True and False
@@ -49,3 +36,18 @@ if __name__ == '__main__':
         print("No subset adds upto given sum")
     else:
         print("Subset with given sum is present")
+
+"""
+SAMPLE INPUT AND OUTPUT
+
+Enter size of array:
+6
+Enter elements of array: 
+3 34 4 12 5 2
+Enter sum: 
+9
+Subset with given sum is present
+
+Time Complexity: O(sum * size of array)
+Space Complexity: O(sum * size of array)
+"""
