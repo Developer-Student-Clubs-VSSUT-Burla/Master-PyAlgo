@@ -1,7 +1,7 @@
 # Python3 program on Fibonacci search.
 
 # Time complexity O(log(n))
- 
+# Fibonacci Search is a comparison-based technique that uses Fibonacci numbers to search an element in a sorted array.
 def fSearch(arr, x, n):
  
     
