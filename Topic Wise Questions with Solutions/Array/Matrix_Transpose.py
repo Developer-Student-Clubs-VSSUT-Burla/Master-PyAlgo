@@ -11,6 +11,7 @@
 
 
 # Function for the transpose :
+
 def Transpose(A):
     for row in A: 
         print(row) 
@@ -18,6 +19,9 @@ def Transpose(A):
     transpose = zip(*A) 
     for row in transpose: 
         print(row) 
+
+
+# Driver code here:
 
 if __name__=='__main__':
 
