@@ -1,3 +1,5 @@
+# Program to check if the given number is a strong number or not
+
 # To calculate the factorial of the number
 def fact(num):
     if(num==0):
