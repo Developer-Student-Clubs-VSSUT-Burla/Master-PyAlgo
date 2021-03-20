@@ -101,6 +101,7 @@
   - Lydon Factorization
   - Z Algorithm
   - Rabin-Karp Algorithm
+  - Concatenation of two strings 
 </details>
 
 ##
