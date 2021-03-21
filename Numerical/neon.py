@@ -1,5 +1,5 @@
 
-
+#I have succesfully executed this in python online gdb.
 def neon(n):
     s = n**2
     sum = 0
