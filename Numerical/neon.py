@@ -1,14 +1,18 @@
+
+
+def neon(n):
+    s = n**2
+    sum = 0
+    while s:
+        sum = sum+(s % 10)
+        s = s//10
+    if sum == n:
+        return 1
+    else:
+       return 0
 n = int(input())
-s = n**2
-sum = 0
-while s:
-    sum = sum+(s % 10)
-    s = s//10
 
-
-if sum == n:
+if neon(n)==1:
     print(n, "is a neon number")
 else:
     print(n, "is not a neon number")
-
-    
