@@ -30,7 +30,7 @@
   - Euler's Phi Function
   - Primitive Root
   - Sieve of Eratosthenes
-  - Tower of Hanoi
+  
 </details>
 
 <details>

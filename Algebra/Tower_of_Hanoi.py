@@ -1,15 +1,17 @@
+# Program to implement Tower of Hanoi
+
 # Function to demonstrate the number of moves to shift rings from start rod to end rod 
 def Tower_of_Hanoi(num , start_rod, end_rod, aux_rod):
-    if(num == 1):
-        print("Move disk 1 from",start_rod,"to",end_rod)
+    if num == 1:
+        print ("Move disk 1 from", start_rod,"to", end_rod)
     else:
         Tower_of_Hanoi(num-1, start_rod, aux_rod, end_rod)
-        print("Move disk",num,"from",start_rod,"to",end_rod)
+        print ("Move disk", num,"from", start_rod,"to", end_rod)
         Tower_of_Hanoi(num-1, aux_rod, end_rod, start_rod)
 
 if __name__ == "__main__" :       
-    num=int(input("Enter the number of rings in the first rod:"));
-    Tower_of_Hanoi(num,'A','C','B');
+    num= int(input("Enter the number of rings in the first rod:"))
+    Tower_of_Hanoi(num,'A','C','B')
     
 '''
 Enter the number of rings in the first rod:3
