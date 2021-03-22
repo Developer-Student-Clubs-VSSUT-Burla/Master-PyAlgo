@@ -1,0 +1,112 @@
+#!/usr/bin/env python
+# coding: utf-8
+
+# In[1]:
+
+
+class Node:                  #creating a class for the node
+    def __init__(self,data=None,next=None):
+        self.data = data
+        self.next = next
+class linkedlist:               #class for linked list
+    def __init__(self):          #intialize a constructor where head = null
+        self.head = None
+    def insertion(self,data):       #insertion into linked list     
+        node1 = Node(data)
+        if(self.head):
+            present = self.head
+            while(present.next):    #if head is not empty then next of the last node will create a new node
+                present = present.next
+            present.next = node1
+        else:
+            self.head = node1       #if head is empty then new node at the front will be created
+                                     #printing the linked list      
+    def LLprint(self):
+        present= self.head          #head is the present value
+        while(present):
+            print(present.data)
+            present = present.next
+            
+def ireverse(list):              #iterative approach
+    prev = None                  # previous pointer is pointing to  null 
+    present = list.head           # present pointer is  pointing to head
+    nextnode = present.next      # next pointer is  pointing to next node
+        
+    while(present):
+        present.next = prev
+        prev = present
+        present = nextnode
+        if nextnode:
+            nextnode = nextnode.next
+    list.head = prev
+
+
+LL = linkedlist()
+print("The original Linked List is:")
+LL.insertion(0)
+LL.insertion(2)
+LL.insertion(4)
+LL.insertion(6)
+LL.LLprint()
+print("The reverse Linked List using iterative approach:")
+ireverse(LL)
+LL.LLprint()
+
+
+    
+ 
+
+
+# In[2]:
+
+
+class Node:                     #node creation
+    def __init__(self, data):
+        self.data = data
+        self.next = None
+
+class linkedlist:           #intially node head is pointing to null
+    def __init__(self):
+        self.head = None
+
+    def _reverse(self, previous, current):  #recursive call 
+        if current is None:                 #if present node is null then head will point to previous node
+            self.head = previous
+        else:
+            self._reverse(current, current.next)  #else it will call the function again and again until it reaches the termination condition
+            current.next = previous
+
+    def reverse(self):
+        self._reverse(None, self.head)
+
+    def insert(self, data): #pushing the data back inito linked list
+        new_node = Node(data)
+        new_node.next = self.head
+        self.head = new_node
+
+    def LLprint(self): #print the list 
+        current = self.head
+        reverselist = []
+        while current:
+            reverselist.append(current.data) #appending the value to the list from backside
+            current = current.next
+        return reverselist
+
+
+LL = linkedlist()
+LL.insert(0)
+LL.insert(2)
+LL.insert(4)
+LL.insert(6)
+print("The original list is:")
+print(LL.LLprint())
+LL.reverse()
+print(" The Reversed list using recursive approach is: ")
+print(LL.LLprint())
+
+
+# In[ ]:
+
+
+
+
