@@ -1,6 +1,7 @@
 """Created by @VivanVatsa
 
-    BreadthFirst Search Algorithm
+    BreadthFirst Search Algorithm:
+    
     a graph search algorithm that can be used to solve a variety of problems such as:
 
     - finding all the vertices reachable from a vertex
@@ -67,8 +68,11 @@ if __name__ == "__main__":
     graph["H"] = ["C"]
 
     print(breadth_first(graph, "A"))
-    """
+    
+    
+    
+"""
     Output
     
     ['A', 'B', 'D', 'G', 'E', 'F', 'C', 'H']
-    """
+"""
