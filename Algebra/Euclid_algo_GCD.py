@@ -12,3 +12,8 @@ num1, num2 = [int(i) for i in input().split()]
 
 gcdNum = gcd(num1, num2)
 print("\nGCD of", num1, "and", num2, "is:", gcdNum)
+
+# Sample output :
+# Enter two numbers to find their GCD: 60 36          
+
+# GCD of 60 and 36 is: 12
