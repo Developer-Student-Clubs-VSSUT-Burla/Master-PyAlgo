@@ -22,6 +22,13 @@
 import math
 
 def sieveOfAtkin(limit):
+    #Creating a empty list.
+    P=[]
+    if limit ==2:
+        return P
+    P=[2]
+    if limit==3:
+        return P
     #Adding 2 and 3 as prime numbers
     P = [2,3]
     #Creating a list of boolean type of size n and
