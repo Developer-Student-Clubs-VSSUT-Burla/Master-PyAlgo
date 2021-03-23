@@ -45,5 +45,3 @@ print("input array :")
 print(arr)
 print("output array:")
 print(move_negative_before_positive(arr))
-
-
