@@ -35,12 +35,9 @@ if __name__=='__main__':
 
     print("Enter the elements: ")
 
-    for i in range(n):
-        elements=int(input())
-        numbers.append(elements)
-
-    numbers=WaveSort(numbers,n)
+    numbers = list(map(int, input().split()))
+    numbers= WaveSort(numbers,n)
 
     print("After Wave Sort: ")
-    for i in range(0,n):
-        print(numbers[i])
+    for i in range(n):
+        print(numbers[i], end=" ")
