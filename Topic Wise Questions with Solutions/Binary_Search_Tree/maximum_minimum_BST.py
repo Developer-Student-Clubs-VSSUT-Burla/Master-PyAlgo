@@ -1,9 +1,7 @@
 # Find the maximum and minimum element in a given array using Binary Search Tree
-  # numbers= [19.45,67,34,7,56,42,6,87,11,12]
 
-  # OUTPUT 
-  # Minimum = 6
-  # Maximum = 87
+
+  # Sample input = [19.45,67,34,7,56,42,6,87,11,12]
 
 
 class BinarySearchTree:
@@ -68,6 +66,10 @@ if __name__=='__main__':
 
     print("Minimum:", number_tree.min_val())
     print("Maximum:", number_tree.max_val())
+
+  # SAMPLE OUTPUT 
+  # Minimum = 6
+  # Maximum = 87
 
 
 

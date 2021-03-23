@@ -7,6 +7,9 @@
     # 2. The value of the right child node will always be greater than the value of parent node
     # 3. Elements are not duplicated in a Tree
 
+
+# Sample input = [19.45,67,34,7,56,42,6,87,11,12]
+
 class BinarySearchTree:
     def __init__(self,data):
      self.data=data
@@ -85,11 +88,12 @@ class BinarySearchTree:
 
     def Search(self, key):      #k key is the value we need to search
         if self.data==key:
-            return self.data
+            return True
 
         if key<self.data:
             if self.left:
                 return self.left.Search(key)
+                return True
 
             else:
                 return False
@@ -97,6 +101,7 @@ class BinarySearchTree:
         if key>self.data:
             if self.right:
                 return self.right.Search(key)
+                return True
             else:
                 return False
 
@@ -132,3 +137,11 @@ if __name__=='__main__':
     print("Pre order: " ,numbers_tree.pre_order_traversal())
     print("Post order: " ,numbers_tree.post_order_traversal())
     print(numbers_tree.Search(key))
+
+# Sample Output:
+  # In order: [6,7,11,12,19,34,42,45,45,56,67,87]
+  # Pre order : [19,6,7,11,12,34,42,45,56,67,87]
+  # Post order: [6,7,11,12,34,42,45,56,67,87,19]
+
+  # False  (if number not in tree)
+  # True (if number in tree)
