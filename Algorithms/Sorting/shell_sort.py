@@ -18,7 +18,7 @@ def shellSort(arr, n):
 if __name__ == '__main__':
     print("How many numbers do you want to sort? ", end="")
     n = int(input())
-        if n == 0:
+    if n == 0:
         print("\nNo elements to sort")
         exit()
     print("Enter elements of array: ", end="")
