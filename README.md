@@ -93,6 +93,7 @@
 <details>
   <summary>Strings</summary>
 
+  - Distinct-Palindromic-Substrings
   - Knuth–Morris–Pratt Algorithm
   - Longest Common/Palindromic Subsequences
   - Longest Common Substring
