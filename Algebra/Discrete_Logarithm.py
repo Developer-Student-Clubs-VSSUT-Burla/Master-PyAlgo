@@ -13,9 +13,10 @@ def DiscreteLogarithm(a,b,m):
     return -1
 
 print("Enter value for:")
-# sample values a=45, b=78, m=89, k=3
+# Sample values a=45, b=78, m=89    
+# Sample output: k=3
 a = int(input("a:"))   
 b = int(input("b:"))   
-m = int(input("c:"))   
+m = int(input("m:"))   
 print(DiscreteLogarithm(a,b,m))
 
