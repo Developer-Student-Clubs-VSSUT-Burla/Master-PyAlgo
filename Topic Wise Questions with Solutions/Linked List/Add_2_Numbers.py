@@ -1,29 +1,20 @@
-
-
-# Input : First List is 7 5 9 4 6  Second List is 8 4 
-
-# Output : Resultant list is  Resultant list is 5 0 0 5 6 
-
 class Node:
-
     # Constructor to initialize the node object
     def __init__(self, data):
         self.data = data
         self.next = None
-
-
+        
 class LinkedList:
-
     # Function to initialize head
     def __init__(self):
         self.head = None
-
+        
     # Function to insert a new node at the beginning
     def push(self, new_data):
         new_node = Node(new_data)
         new_node.next = self.head
         self.head = new_node
-
+        
     # Add contents of two linked lists and return the head
     # node of resultant list
     def addTwoLists(self, first, second):
@@ -33,7 +24,6 @@ class LinkedList:
 
         # While both list exists
         while(first is not None or second is not None):
-
             # Calculate the value of next digit in
             # resultant list
             # The next digit is sum of following things
@@ -64,7 +54,7 @@ class LinkedList:
 
             # Set prev for next insertion
             prev = temp
-
+            
             # Move first and second pointers to next nodes
             if first is not None:
                 first = first.next
@@ -82,26 +72,25 @@ class LinkedList:
             print('->',end=' ')
             temp = temp.next
        
- 
-
 # Driver code
 first = LinkedList()
 second = LinkedList()
 
 # Create first list
-first.push(6)
-first.push(4)
-first.push(9)
-first.push(5)
-first.push(7)
+run = int(input('Enter the nummber of nodes in first LL:'))
+for i in range(run):
+    ele = int(input('Enter element:'))
+    first.push(ele)
 
 print("First List is ")
 first.printList()
 
 # Create second list
-second.push(4)
-second.push(8)
-
+runs = int(input('\nEnter the nummber of nodes in seconf LL:'))
+for i in range(runs):
+    eles = int(input('Enter element:'))
+    second.push(eles)
+    
 print("\nSecond List is ")
 second.printList()
 
@@ -110,6 +99,9 @@ res = LinkedList()
 res.addTwoLists(first.head, second.head)
 print("\nResultant list is ")
 res.printList()
+
+# Input : First List is 7 5 9 4 6  Second List is 8 4 
+# Output : Resultant list is  Resultant list is 5 0 0 5 6 
 
 
 
