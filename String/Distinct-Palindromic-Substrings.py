@@ -1,13 +1,4 @@
 #Given a string of lowercase ASCII characters, find all distinct continuous palindromic sub-strings of it.
-#Example:
-
-#Input: str = "abaaa"
-#Output:  Below are 5 palindrome sub-strings
-#a
-#aa
-#aaa
-#aba
-#b
 
 # Python program Find all distinct palindromic sub-strings of a given string 
 
@@ -17,12 +8,12 @@ def DistinctPalindromeSubStrs(st):
 	stringlen = len(st) 
 
 	# table for storing results (2 rows for odd- and even-length palindromes 
-	R = [[0 for x in xrange(stringlen+1)] for x in xrange(2)] 
+	R = [[0 for x in range(stringlen+1)] for x in range(2)] 
 
 	# Find all sub-string palindromes from the given input string insert 'guards' to iterate easily over s 
 	st = "@" + st + "#"
 
-	for j in xrange(2): 
+	for j in range(2): 
 		rp = 0 # length of 'palindrome radius' 
 		R[j][0] = 0
 
@@ -47,15 +38,25 @@ def DistinctPalindromeSubStrs(st):
 
 	# Put all obtained palindromes in a hash map to find only distinct palindrome 
 	w[st[0]] = 1
-	for i in xrange(1,stringlen): 
-		for j in xrange(2): 
-			for rp in xrange(R[j][i],0,-1): 
+	for i in range(1,stringlen): 
+		for j in range(2): 
+			for rp in range(R[j][i],0,-1): 
 				w[st[i - rp - 1 : i - rp - 1 + 2 * rp + j]] = 1
 		w[st[i]] = 1
 
 	# printing all distinct palindromes from hash map 
-	print "Below are " + str(len(w)) + " palindromic sub-strings"
+	print ("Below are " + str(len(w)) + " palindromic sub-strings")
 	for k in w: 
-		print k 
+		print (k) 
 
-DistinctPalindromeSubStrs("abaaa") 
+s = input("Enter string ")		
+DistinctPalindromeSubStrs(s) 
+
+#Input: str = "abaaa"
+#
+#Output:  Below are 5 palindromic sub-strings
+#a
+#aa
+#aaa
+#aba
+#b
