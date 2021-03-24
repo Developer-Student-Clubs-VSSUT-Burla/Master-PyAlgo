@@ -28,7 +28,7 @@ if __name__ == '__main__':
         c = int(input('Enter the value of c:'))
         interesting_xor(c)
         t = t - 1
-        
+
 '''
 Sample Output
 Enter the numeber of testcases:2
@@ -37,5 +37,4 @@ Enter the value of c:10
 Enter the value of c:13
 70
 '''
-
-        
+       
