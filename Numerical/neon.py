@@ -1,5 +1,5 @@
 
-#I have succesfully executed this in python online gdb.
+#I have successfully executed this in python online gdb.
 def neon(n):
     s = n**2
     sum = 0
@@ -16,3 +16,7 @@ if neon(n)==1:
     print(n, "is a neon number")
 else:
     print(n, "is not a neon number")
+    
+#Sample Input: 9
+#sample output: 9 is a neon number
+
