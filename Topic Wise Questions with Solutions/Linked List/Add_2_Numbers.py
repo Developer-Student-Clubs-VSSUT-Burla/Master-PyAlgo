@@ -100,8 +100,8 @@ res.addTwoLists(first.head, second.head)
 print("\nResultant list is ")
 res.printList()
 
-# Input : First List is 7 5 9 4 6  Second List is 8 4 
-# Output : Resultant list is  Resultant list is 5 0 0 5 6 
+'''Input : First List is 7 5 9 4 6  Second List is 8 4 
+Output : Resultant list is  Resultant list is 5 0 0 5 6 '''
 
 
 
