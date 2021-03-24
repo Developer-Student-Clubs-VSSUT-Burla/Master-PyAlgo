@@ -70,10 +70,10 @@ if __name__=='__main__':
 		print("Loop starting node is " + str(res.key))
 		
 
-#sample output :
-# input : 2->4->15|->10
-	     |____|
-	          
-# output : Loop exist
+'''sample output :
+
+input : 2->4->15|->10
+	     |____|          
+output : Loop exist  '''
 
 
