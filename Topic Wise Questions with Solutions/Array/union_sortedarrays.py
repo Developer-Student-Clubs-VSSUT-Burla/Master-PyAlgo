@@ -1,28 +1,6 @@
 '''
 Program to find union of two sorted arrays
 
-Time complexity of the program : 0(n+m)
-
-Sample Test Case :
-Enter the number of elements of array 1 : 4
-Enter the elements of array 1 :
-1
-3
-4
-5
-Enter the number of elements of array 2 : 2
-Enter the elements of array 2 :
-7
-9
-Union of the two arrays is :
-1
-3
-4
-5
-7
-9
-
-
 '''
 
 def printunion(arr1, arr2, m, n):
@@ -64,3 +42,26 @@ for i in range(n):
     arr2.append(val)
 print("Union of the two arrays is :")
 printunion(arr1, arr2, m, n)
+
+'''
+Time complexity of the program : 0(n+m)
+
+Sample Test Case :
+Enter the number of elements of array 1 : 4
+Enter the elements of array 1 :
+1
+3
+4
+5
+Enter the number of elements of array 2 : 2
+Enter the elements of array 2 :
+7
+9
+Union of the two arrays is :
+1
+3
+4
+5
+7
+9
+'''
