@@ -1,21 +1,6 @@
 '''
 Program to find intersection of two sorted arrays
 
-Time complexity : 0(m+n)
-
-Sample Test Case:
-Enter the number of elements of array 1 : 2
-Enter the elements of array 1 :
-1
-2
-Enter the number of elements of array 2 : 3
-Enter the elements of array 2 :
-1
-3
-4
-Intersection of the two arrays is :
-1
-
 '''
 
 def printintersection(arr1, arr2, m, n):
@@ -46,3 +31,20 @@ for i in range(n):
     arr2.append(val)
 print("Intersection of the two arrays is :")
 printintersection(arr1, arr2, m, n)
+
+'''
+Time complexity : 0(m+n)
+
+Sample Test Case:
+Enter the number of elements of array 1 : 2
+Enter the elements of array 1 :
+1
+2
+Enter the number of elements of array 2 : 3
+Enter the elements of array 2 :
+1
+3
+4
+Intersection of the two arrays is :
+1
+'''
