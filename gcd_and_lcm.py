@@ -1,4 +1,4 @@
-# Python program to find LCM AND GCD of two numbers
+ # Python program to find LCM AND GCD of two numbers
 #WE KNOW THAT (a x b) = GCD(a,b) * LCM (a,b)
 
 def gcd(a,b):
