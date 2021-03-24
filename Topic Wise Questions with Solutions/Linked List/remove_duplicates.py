@@ -1,29 +1,16 @@
-#Linked List before removing Duplicates.
-#10 12 13 11 13 11 90 
-#Linked List after removing duplicates.
-#10 12 13 11 90 
-
-
-
 class Node:
-	
 	def __init__(self, data):
-		
 		self.data = data
 		self.next = None
 
 class LinkedList:
-	
 	def __init__(self):
-		
 		self.head = None
 		
 	# Function to print nodes in a 
 	# given linked list 
 	def printlist(self):
-		
 		temp = self.head
-		
 		while (temp):
 			print(temp.data, end = " ")
 			temp = temp.next
@@ -39,18 +26,15 @@ class LinkedList:
 			
 		# Hash to store seen values 
 		hash = set() 
-
 		current = head
 		hash.add(self.head.data)
-
+		
 		while current.next is not None:
-
 			if current.next.data in hash:
 				current.next = current.next.next
 			else:
 				hash.add(current.next.data)
 				current = current.next
-
 		return head
 
 # Driver code 
@@ -58,13 +42,13 @@ if __name__ == "__main__":
 	
 	# Creating Empty list
 	llist = LinkedList()
-	llist.head = Node(10)
-	second = Node(12)
-	third = Node(13)
-	fourth = Node(11)
-	fifth = Node(13)
-	sixth = Node(11)
-	seventh = Node(90)
+	llist.head = Node(int(input('Enter head Node value:')))
+	second = Node(int(input('Enter second Node value:')))
+	third = Node(int(input('Enter third Node value:')))
+	fourth = Node(int(input('Enter fourth Node value:')))
+	fifth = Node(int(input('Enter fifth Node value:')))
+	sixth = Node(int(input('Enter sixth Node value:')))
+	seventh = Node(int(input('Enter seventh Node value:')))
 	
 	# Connecting second and third
 	llist.head.next = second
@@ -80,3 +64,8 @@ if __name__ == "__main__":
 	llist.removeDuplicates(llist.head)
 	print("\nLinked List after removing duplicates.")
 	llist.printlist()
+	
+#Linked List before removing Duplicates.
+#10 12 13 11 13 11 90 
+#Linked List after removing duplicates.
+#10 12 13 11 90 
