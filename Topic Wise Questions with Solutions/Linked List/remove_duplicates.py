@@ -65,7 +65,7 @@ if __name__ == "__main__":
 	print("\nLinked List after removing duplicates.")
 	llist.printlist()
 	
-#Linked List before removing Duplicates.
-#10 12 13 11 13 11 90 
-#Linked List after removing duplicates.
-#10 12 13 11 90 
+'''Linked List before removing Duplicates.
+10 12 13 11 13 11 90 
+Linked List after removing duplicates.
+10 12 13 11 90 '''
