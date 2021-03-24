@@ -1,8 +1,5 @@
 #Given a string of lowercase ASCII characters, find all distinct continuous palindromic sub-strings of it.
 
-# Python program Find all distinct palindromic sub-strings of a given string 
-
-# Function to print all distinct palindrome sub-strings of s 
 def DistinctPalindromeSubStrs(st): 
 	w = dict() 
 	stringlen = len(st) 
@@ -22,7 +19,7 @@ def DistinctPalindromeSubStrs(st):
 
 			# Attempt to expand palindrome centered at i 
 			while st[i - rp - 1] == st[i + j + rp]: 
-				rp += 1 # Incrementing the length of palindromic radius as and when we find valid palindrome 
+				rp += 1     # Incrementing the length of palindromic radius as and when we find valid palindrome 
 
 			# Assigning the found palindromic length to odd/even length array 
 			R[j][i] = rp 
@@ -52,11 +49,13 @@ def DistinctPalindromeSubStrs(st):
 s = input("Enter string ")		
 DistinctPalindromeSubStrs(s) 
 
-#Input: str = "abaaa"
-#
-#Output:  Below are 5 palindromic sub-strings
-#a
-#aa
-#aaa
-#aba
-#b
+''''
+Input: str = "abaaa"
+
+Output:  Below are 5 palindromic sub-strings
+a
+aa
+aaa
+aba
+b
+'''
