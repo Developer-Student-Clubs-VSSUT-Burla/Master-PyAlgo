@@ -17,10 +17,10 @@ def interesting_xor(c):
     if sub == 0:
         sub = c
         num1 = z - 1
-        print num1 * (num1 + sub)
+        print(num1 * (num1 + sub))
     else:
         num1 = z // 2 - 1
-        print num1 * (num1 + sub)
+        print(num1 * (num1 + sub))
 
 if __name__ == '__main__':
     t = int(input('Enter the number of testcases:'))
