@@ -7,16 +7,6 @@ operations :
 3) Replace
 You are asked to find the minimum operations required to convert st1 to st2
 '''
-'''
-Input:
-Enter the first string : geek
-Enter the second string : gesek
-Output:
-Min operations required :  1
-
-Time Complexity : O(length(st1)*length(st2))
-Space Complexity : O(length(st1)*length(st2))
-'''
 def solve(dp,s1,s2,i,j):# Function to find the min opr required
 	if i==len(s1) and j==len(s2):
 		return 0
@@ -40,3 +30,13 @@ if __name__=="__main__":
 	s2=input("Enter the second string : ")# Enter the second number
 	dp=[[-1 for i in range(len(s2))] for j in range(len(s1))]# Initialize each value on dp to -1
 	print("Min operations required :  ",solve(dp,s1,s2,0,0))#Print the minimum operations
+'''
+Input:
+Enter the first string : geek
+Enter the second string : gesek
+Output:
+Min operations required :  1
+
+Time Complexity : O(length(st1)*length(st2))
+Space Complexity : O(length(st1)*length(st2))
+'''
