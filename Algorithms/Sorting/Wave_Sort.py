@@ -5,7 +5,7 @@
 #    >=arr[1]<=arr[2]>=arr[3]<=
 
 # SAMPLE INPUT:
-#    10, 20, 5, 17, 46, 35, 29, 59, 70
+" 10, 20, 5, 17, 46, 35, 29, 59, 70 "
 
 
 # The code for Wave sort:
@@ -28,7 +28,7 @@ if __name__=='__main__':
 
     numbers=[]
 
-    n=int(input("Length of arr: "))
+    n=int(input("Length of array: "))
 
     print("Enter the elements: ")
 
@@ -40,4 +40,4 @@ if __name__=='__main__':
         print(numbers[i], end=" ")
 
 # SAMPLE OUTPUT:
-#   20, 5, 17, 10, 46, 29, 59, 35, 70
+" 20, 5, 17, 10, 46, 29, 59, 35, 70 "
