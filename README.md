@@ -100,6 +100,7 @@
   - Manacher's Algorithm
   - Lydon Factorization
   - Z Algorithm
+  - Rabin-Karp Algorithm
   - Concatenation of two strings 
 </details>
 
