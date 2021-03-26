@@ -37,23 +37,12 @@ def ireverse(list):                                       # reversing the linked
         if nextnode:
             nextnode = nextnode.next
     list.head = prev
-
 LL = linkedlist()
-LL.insertion(0)
-LL.insertion(1)
-LL.insertion(2)
-print("The original Linked List is:")
-LL.LLprint()
-print("The reverse Linked List using iterative approach:")
-ireverse(LL)
-LL.LLprint()
-
-LL = linkedlist()
-LL.insertion(10)
-LL.insertion(32)
-LL.insertion(12)
-LL.insertion(34)
-LL.insertion(56)
+print("Enter the size of ll:  ")
+n = int(input())
+print("Enter the values of of Linked List: ")
+for i in range(0,n):
+    LL.insertion(input())
 print("The original Linked List is:")
 LL.LLprint()
 print("The reverse Linked List using iterative approach:")
