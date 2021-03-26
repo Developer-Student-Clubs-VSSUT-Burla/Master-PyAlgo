@@ -29,28 +29,19 @@ class linkedlist:                               #intially node head is pointing 
             reverselist.append(current.data)         #appending the value to the list from backside
             current = current.next
         return reverselist
+LL = linkedlist()
+print("Enter the size of ll:  ")
+n = int(input())
+print("Enter the values of of Linked List: ")
+for i in range(0,n):
+    LL.insert(input())
+print("The original Linked List is:")
+print(LL.LLprint())
+print("The reverse Linked List using iterative approach:")
+LL.reverse()
+print(LL.LLprint())
 
 
-LL = linkedlist()
-LL.insert(0)
-LL.insert(1)
-LL.insert(2)
-print("The original list is:")
-print(LL.LLprint())
-LL.reverse()
-print(" The Reversed list using recursive approach is: ")
-print(LL.LLprint())
-LL = linkedlist()
-LL.insert(10)
-LL.insert(32)
-LL.insert(12)
-LL.insert(34)
-LL.insert(56)
-print("The original list is:")
-print(LL.LLprint())
-LL.reverse()
-print(" The Reversed list using recursive approach is: ")
-print(LL.LLprint())
 """
 enter n value = 3
 enter values  = 0 1 2 
