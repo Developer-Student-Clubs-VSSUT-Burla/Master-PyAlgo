@@ -1,4 +1,7 @@
-# Function to check if the number is a magic number or not
+''' Function to check if the number is a magic number or not
+If the sum of its digits are calculated till a single digit comes by adding the sum of digits after every addition.
+If single digit comes out to be 1 then the number is a magic number.
+'''
 
 def magic_num(num):
     while num > 9:
