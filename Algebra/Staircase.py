@@ -1,4 +1,3 @@
-import math
 import os
 import random
 import re
@@ -24,4 +23,5 @@ Ex:-  n=4
    #
   ##
  ###
-####  '''
+#### 
+'''
