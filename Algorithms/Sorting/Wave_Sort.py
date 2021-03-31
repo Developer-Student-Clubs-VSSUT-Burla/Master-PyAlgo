@@ -1,14 +1,13 @@
-# As we understand from the name sort it is a way of sorting that makes the 
-#    list of element look like a wave
+" As we understand from the name sort it is a way of sorting that makes the list of element look like a wave " 
 
-# For example an array after a wave sort will be:
-#    >=arr[1]<=arr[2]>=arr[3]<=
+"  For example an array after a wave sort will be:  "
+"    >=arr[1]<=arr[2]>=arr[3]<= "
 
-# SAMPLE INPUT:
+" SAMPLE INPUT: "
 " 10, 20, 5, 17, 46, 35, 29, 59, 70 "
 
 
-# The code for Wave sort:
+" The code for Wave sort: "
 def swap(arr,i,j):
     arr[i], arr[j] = arr[j], arr[i]
 
@@ -23,7 +22,7 @@ def WaveSort(arr,n):
 
     return arr
 
-# Driver code for the function:
+" Driver code for the function: "
 if __name__=='__main__':
 
     numbers=[]
@@ -39,5 +38,5 @@ if __name__=='__main__':
     for i in range(n):
         print(numbers[i], end=" ")
 
-# SAMPLE OUTPUT:
+" SAMPLE OUTPUT: "
 " 20, 5, 17, 10, 46, 29, 59, 35, 70 "
