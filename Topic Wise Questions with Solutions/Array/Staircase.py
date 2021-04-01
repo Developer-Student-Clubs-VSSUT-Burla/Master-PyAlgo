@@ -4,11 +4,6 @@ A staircase of base and height both equal to n ,is drawn using # symbols and spa
 Write a program that prints a staircase of size n.
 '''
 
-import os
-import random
-import re
-import sys
-
 # Complete the staircase function below.
 def staircase(n):
     for i in range(n):
