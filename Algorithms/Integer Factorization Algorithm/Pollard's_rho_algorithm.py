@@ -18,11 +18,12 @@ The ρ algorithm's most remarkable success was the factorization of the Fermat n
 '''
 #import needed library
 from itertools import count
-from math import gcd
+from fractions import gcd
 import sys
 #take input "number" whose factor we have to determine
 #take any value for x and c, here c=1 is taken
-number, x = 10403, 2
+number=int(input())
+x=2
 # run the loop till you don't find the factor 
 for cycle in count(1):
 #here we assign y=x
@@ -37,3 +38,12 @@ for cycle in count(1):
         if factor > 1:
             print("factor is", factor)
             sys.exit()
+
+''' INPUT 
+
+    10403
+    
+    OUTPUT
+    
+    factor is 101
+'''
