@@ -1,3 +1,4 @@
+'''
 Pollard's rho algorithm is an algorithm for integer factorization.The algorithm is very fast for numbers with small factors, but slower in cases where all factors are large.
 The ρ algorithm's most remarkable success was the factorization of the Fermat number F8 = 1238926361552897 * 93461639715357977769163558199606896584051237541638188580280321
 **How the algorithm work
@@ -14,8 +15,7 @@ The ρ algorithm's most remarkable success was the factorization of the Fermat n
         return failure
     else:
         return d
-
-CODE:
+'''
 #import needed library
 from itertools import count
 from math import gcd
