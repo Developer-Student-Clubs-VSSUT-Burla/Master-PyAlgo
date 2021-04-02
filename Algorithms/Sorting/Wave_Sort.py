@@ -5,6 +5,8 @@ list of element look like a wave
    >=arr[1]<=arr[2]>=arr[3]<= 
 
  SAMPLE INPUT: 
+ Length of array: 9
+ Enter the elements:
  10, 20, 5, 17, 46, 35, 29, 59, 70 
 
 
@@ -32,12 +34,13 @@ if __name__=='__main__':
 
     print("Enter the elements: ")
 
-    numbers = list(map(int, input().split()))
+    numbers = list(map(int, input().split(",")))
     numbers= WaveSort(numbers,n)
 
     print("After Wave Sort: ")
     for i in range(n):
-        print(numbers[i], end=" ")
+        print(numbers[i], end=", ")
 
 ''' SAMPLE OUTPUT: 
+ After Wave Sort:
  20, 5, 17, 10, 46, 29, 59, 35, 70 ''' 
