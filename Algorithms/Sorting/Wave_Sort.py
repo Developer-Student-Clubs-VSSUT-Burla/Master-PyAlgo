@@ -4,12 +4,6 @@ list of element look like a wave
   For example an array after a wave sort will be:  
    >=arr[1]<=arr[2]>=arr[3]<= 
 
- SAMPLE INPUT: 
- Length of array: 9
- Enter the elements:
- 10, 20, 5, 17, 46, 35, 29, 59, 70 
-
-
  The code for Wave sort: '''
 def swap(arr,i,j):
     arr[i], arr[j] = arr[j], arr[i]
@@ -41,6 +35,13 @@ if __name__=='__main__':
     for i in range(n):
         print(numbers[i], end=", ")
 
-''' SAMPLE OUTPUT: 
+''' 
+ SAMPLE INPUT: 
+ Length of array: 9
+ Enter the elements:
+ 10, 20, 5, 17, 46, 35, 29, 59, 70 
+
+
+ SAMPLE OUTPUT: 
  After Wave Sort:
  20, 5, 17, 10, 46, 29, 59, 35, 70 ''' 
