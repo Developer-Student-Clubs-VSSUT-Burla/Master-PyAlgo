@@ -3,7 +3,6 @@ A staircase of base and height both equal to n ,is drawn using # symbols and spa
 
 Write a program that prints a staircase of size n.
 '''
-
 # Complete the staircase function below.
 def staircase(n):
     for i in range(n):
@@ -13,11 +12,8 @@ def staircase(n):
             else:
                 print(" ",end="")
         print()                   # transfer the cursor to the next line
-
-
 if __name__ == '__main__':
     n = int(input())
-
     staircase(n)
 '''
 Ex:-  n=4
