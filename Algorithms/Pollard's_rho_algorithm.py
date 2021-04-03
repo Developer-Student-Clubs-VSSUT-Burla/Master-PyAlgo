@@ -27,7 +27,7 @@ from fractions import gcd
 import sys
 #take input "number" whose factor we have to determine
 #take any value for x and c, here c=1 is taken
-number=int(input())
+number=int(input("Enter a number to find factor "))    #take the input as a number whose factor has to be determined.
 x=2
 # run the loop till you don't find the factor 
 for cycle in count(1):
@@ -45,10 +45,9 @@ for cycle in count(1):
             sys.exit()
 
 ''' INPUT 
-
-    10403
+    10403   
     
     OUTPUT
-    
-    factor is 101
+    Enter a number to find factor
+    factor is 101    
 '''
