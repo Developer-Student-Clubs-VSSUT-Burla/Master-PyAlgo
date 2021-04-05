@@ -1,4 +1,5 @@
-# Radix Sort algorithm using count sort algorithm
+# Radix Sort algorithm using count sort algorithm. it is a non-comparative sorting algorithm. 
+#It avoids comparison by creating and distributing elements into buckets according to their radix.
 def RadixSort(arr, n):
     maxElement = int(max(arr))
     place = 1
@@ -27,8 +28,12 @@ def CountingSort(arr, place):
 
 
 if __name__ == "__main__":
-    arr = [53, 10, 0, 31, 85, 25, 13, 10]
-    RadixSort(arr, 2)
+    arr = []
+    digits_num =  int(input("Enter max num of digits: "))
+    n = int(input("Enter size of array: "))
+    for i in range(n):
+        arr.append(int(input("Enter number: ")))
+    RadixSort(arr, digits_num)
     print(arr)
 # Complexity: O(d*(n+b))
 #Sample Input
