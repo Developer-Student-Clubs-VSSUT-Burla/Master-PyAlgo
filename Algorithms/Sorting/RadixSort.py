@@ -37,5 +37,12 @@ if __name__ == "__main__":
     print(arr)
 # Complexity: O(d*(n+b))
 #Sample Input
-#input array: [53, 10, 0, 31, 85, 25, 13, 10]
-#output array: [0, 10, 10, 13, 25, 31, 53, 85]
+""" Input :-Enter max num of digits: 2
+Enter size of array: 5
+Enter number: 3
+Enter number: 2
+Enter number: 10
+Enter number: 43
+Enter number: 22
+Output :-[2, 3, 10, 22, 43]
+"""
