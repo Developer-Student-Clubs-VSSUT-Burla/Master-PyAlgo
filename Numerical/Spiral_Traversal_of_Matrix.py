@@ -26,8 +26,9 @@ def spiral_matrix(m, n, matrix):
 			l=l+1
       
 
-R=int(input())
-C=int(input())
+R=int(input("Enter No of Rows "))
+C=int(input("Enter No of Colums "))
+print("Add One row at time i.e 1 2 3 4")
 matrix=[]
 
 for i in range(0,R):
