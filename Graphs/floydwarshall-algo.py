@@ -1,3 +1,9 @@
+"""Created by @VivanVatsa
+
+Floyd-Warshall Algorithm: 
+* it is mainly a Shortest path algorithm that we can apply to find the shortest path in a weighted graph containing positive or negative weight cycle in a directed graph
+* The only condition is there should not be any negative cycles in this graph.
+"""
 import argparse
 import os
 import sys
