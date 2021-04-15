@@ -7,6 +7,9 @@ If an element is 0, they cannot move through that element. If the end isn’t re
 def min_jump(arr, n):
     if n <= 1: 
         return 0 #return zero values if the array less than one element
+    if n<=3:
+        return "0 because can't jump "
+         
     
     #assigning the value 0    
     left = 0
