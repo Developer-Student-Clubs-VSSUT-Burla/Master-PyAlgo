@@ -3,10 +3,7 @@
     width i.e. 1 unit.
 
    There are various ways in which the question can be solved and we will be using
-   STACK, in order to solve the problem.
-
-   Sample Input
-   Enter heights of the bar 6,2,5,4,5,1,6 '''
+   STACK, in order to solve the problem. '''
 
 class Area (object):
     def largestRectangleArea(self,heights):
@@ -53,5 +50,10 @@ if __name__ == '__main__' :
     solution= Area()
     print("Maximum Rectangle Area: ", solution.largestRectangleArea(numbers))
 
-''' Sample Output
+'''
+    Sample Input :
+    Enter heights of the bar 6,2,5,4,5,1,6 
+   
+   
+    Sample Output : 
     Maximum Rectangle Area: 12 '''
