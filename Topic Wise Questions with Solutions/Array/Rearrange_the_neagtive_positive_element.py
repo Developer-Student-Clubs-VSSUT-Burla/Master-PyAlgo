@@ -16,25 +16,25 @@ output: {-5, 5, -2, 2, -8, 4, 7, 1, 8, 0}
 """
 
 def rearrange_list_with_order(arr):
+    #let take list one for positive elements and another for negative elements   
     posi=[]
     negi=[]
-    
-    for i in range(len(arr)):
+    l=len(arr)
+    #then take carray out all the negative in negi list and positive in positive list  
+    for i in range(l):
         if arr[i]>=0:
             posi.append(arr[i])
         else:
             negi.append(arr[i])
     
-    l=len(arr)
-
-    arr2=[]      
-    
+    arr2=[]      #take another for print all negative & positive elements in alterting position.
     for i in range(l):
     #print(negi[i],posi[i],len(negi),len(posi))
         if i<len(negi):
             arr2.append(negi[i])
         if i<len(posi):
             arr2.append(posi[i])
+    #result 
     return arr2 
 
 if __name__ == "__main__":
