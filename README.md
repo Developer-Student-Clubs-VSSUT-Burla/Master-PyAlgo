@@ -93,6 +93,7 @@
 <details>
   <summary>Strings</summary>
 
+  - Distinct-Palindromic-Substrings
   - Knuth–Morris–Pratt Algorithm
   - Longest Common/Palindromic Subsequences
   - Longest Common Substring
@@ -100,6 +101,8 @@
   - Manacher's Algorithm
   - Lydon Factorization
   - Z Algorithm
+  - Rabin-Karp Algorithm
+  - Concatenation of two strings 
 </details>
 
 ##
