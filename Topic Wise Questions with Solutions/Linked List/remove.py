@@ -2,10 +2,6 @@
 Remove Element
 Given a linked list nums and a value val, remove all instances of that value in-place and return the new linked list.
 Do not allocate extra space for another linked list, you must do this by modifying the input linked list in-place with O(1) extra memory.
-Input: 3 -> 2 -> 2 -> 3
-Output: 2 -> 2
-Input: 0 -> 1 -> 2 -> 2 -> 3 -> 0 -> 4 -> 2
-Output: 0 -> 1 -> 3 -> 0 -> 4
 Iterate the linked list and jump the values that needs to be deleted (change the next pointer).
     Time Complexity:    O(N)
     Space Complexity:   O(1)
