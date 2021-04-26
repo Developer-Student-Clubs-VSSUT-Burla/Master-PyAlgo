@@ -30,6 +30,7 @@
   - Euler's Phi Function
   - Primitive Root
   - Sieve of Eratosthenes
+  - Pronic Numbers
 </details>
 
 <details>
