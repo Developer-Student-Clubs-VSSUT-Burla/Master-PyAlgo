@@ -4,6 +4,14 @@
     which does not include 1. Those numbers for which this process ends in 1 are happy number.
 '''
 
+'''
+    Happy number- A happy number is a number which eventually reaches 1 when replaced by the sum of the square of each digit.
+    Example- 13 is a happy number
+    1^2+3^2=10
+    1^2+0^2=1.
+    It reaches to 1 hence It is a happy number.
+'''
+
 #Function check the happy number
 def checkHappyNumber(n):
   #Loop for getting the sum of digits
