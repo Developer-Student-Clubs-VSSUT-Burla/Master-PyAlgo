@@ -1,4 +1,3 @@
-
 #The Interpolation search algorithm is an algorithm which is used for searching a given target value in a sorted array.
 #Time complexity: O(log2(log2n))
 #Space complexity:O(1)
