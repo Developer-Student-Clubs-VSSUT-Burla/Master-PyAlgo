@@ -14,20 +14,23 @@ Constraints:
 
 
 """
+nums=list(map(int,input().split()))
+val=int(input())
+a=nums.count(val)
+i=1
+while i <=a:
+nums.remove(val)
+i+=1
+print(nums)
 
 class Solution:
-    def removeElement(self, nums, val):
-        """
-        :type nums: List[int]
-        :type val: int
-        :rtype: int
-        """
-        count = 0
-        for i in range(len(nums)):
-            if nums[i] != val :
-                nums[count] = nums[i]
-                count +=1
-        return count
+    def removeElement(self, nums: List[int], val: int) -> int:
+        a=nums.count(val)
+        i=1
+        while i <=a:
+            nums.remove(val)
+            i+=1
+        print(nums)
 
 """
 EXAMPLE : 1
