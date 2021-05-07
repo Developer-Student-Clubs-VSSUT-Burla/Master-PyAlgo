@@ -31,6 +31,7 @@
   - Primitive Root
   - Sieve of Eratosthenes
   - Pronic Numbers
+  - Trimorphic Number
 </details>
 
 <details>
