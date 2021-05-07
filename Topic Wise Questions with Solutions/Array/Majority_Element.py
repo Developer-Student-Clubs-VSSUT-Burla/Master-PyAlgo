@@ -25,5 +25,6 @@ Sample Output
 Enter the size of the array:9
 Enter the elements : 2 2 2 4 1 1 1 1 1
 Majority Element = 1
+
 '''
 
