@@ -7,6 +7,7 @@ Write a function that takes a list of jobs and list of dependencies and return a
 
 Jobs : [1,2,3,4]
 deps : [ [1,2] , [1,3] , [3,2] , [4,2] , [4,3] ]
+Output [1,4,3,2] or [4,1,3,2]
 
 Space and Time Complexity:
 O(j+d)time and O(j+d)space - where j is the numbers of jobs and d is the number of dependencies.
@@ -76,7 +77,7 @@ def depthFirstTraverse(node, orderedJobs):
     node.visiting = False
     orderedJobs.append(node.job)
     return False
-    
+
 def main():
     print(topologicalSort([1,2,3,4],[[1,2],[1,3],[3,2],[4,2],[4,3]]))
 main()
