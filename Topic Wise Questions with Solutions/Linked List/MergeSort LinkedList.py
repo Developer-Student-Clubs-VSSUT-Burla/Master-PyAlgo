@@ -89,14 +89,14 @@ def Display(head):                                      # Function to display Li
 if __name__ == '__main__':                               # Driver Code
     ll = LLConstruct()
      
-    n = int(input());
-    Elements = list(map(int,input().split()));
+    n = int(input());                                    # taking input for size of Linked List
+    Elements = list(map(int,input().split()));           # taking input of list elements
     
     for i in range (n):
-        ll.appendatlast(Elements[i]);
+        ll.appendatlast(Elements[i]);                    # construction of Linked List
      
-    ll.head = mergeSort(ll.head)
-    Display(ll.head)
+    ll.head = mergeSort(ll.head)                         # calling mergeSort for Sorting the Linked List
+    Display(ll.head)                                     # Display the Linked List
     
 '''
 Test case 1 :
