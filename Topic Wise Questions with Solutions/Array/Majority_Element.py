@@ -3,22 +3,15 @@ The majority element is the element that appears more than ⌊n / 2⌋ times.
 Assuming that the majority element always exists in the array.
 '''
 def majorityElement(array):
-    for i in range(0, len(array)):
-        count = 1
-        for j in range(i + 1, len(array)):
-            if array[i] == array[j]:
-                count += 1
-        if count > int(len(array) / 2):
-            return array[i]
-    return -1
+    if len(array) == 1:
+        return array[0]
+    array.sort()
+    return array[len(array) // 2]
+
 
 n = int(input('Enter the size of the array:'))
 array = list(map(int, input('Enter the elements : ').strip().split()))[:n]
-element = majorityElement(array)
-if element == -1:
-    print ('No Majority Element found')
-else:
-    print ('Majority Element = ', element)
+print ('Majority element = ', majorityElement(array))
     
 '''
 Sample Output
