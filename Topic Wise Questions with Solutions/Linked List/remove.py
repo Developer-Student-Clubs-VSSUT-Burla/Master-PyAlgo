@@ -14,23 +14,22 @@ Constraints:
 
 
 """
+print("Enter the values for nums to store in an array:")
 nums=list(map(int,input().split()))
+print("Enter the value of val:")
 val=int(input())
-a=nums.count(val)
-i=1
-while i <=a:
-nums.remove(val)
-i+=1
-print(nums)
 
 class Solution:
-    def removeElement(self, nums: List[int], val: int) -> int:
+    def removeElement(self, nums: list , val: int) -> int:
         a=nums.count(val)
         i=1
         while i <=a:
             nums.remove(val)
             i+=1
         print(nums)
+        
+s = Solution()
+s.removeElement(nums, val) 
 
 """
 EXAMPLE : 1
