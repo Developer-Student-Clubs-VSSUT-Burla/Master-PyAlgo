@@ -15,7 +15,7 @@
 '''
 # Python Code:
 
-num=int(input())
+num=int(input("Enter the Number"))
 flag=0
 cube_power=num*num*num
 while num!=0:
@@ -27,7 +27,7 @@ while num!=0:
 if flag==0:
     print("The given number is Trimorphic")
 else:
-   print("The given is not number is Trimorphic")
+    print("The given is not number is Trimorphic")
 
 
 ''' 
