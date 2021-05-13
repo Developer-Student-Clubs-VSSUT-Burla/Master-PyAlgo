@@ -2,7 +2,7 @@
  A program to remove the kth index from a string and print the remaining string.In case the value of k
  is greater than length of string then return the complete string as it is.
  '''
- 
+
  #main function
  def main():
      s=input("enter a string")
@@ -30,3 +30,4 @@
  enter the index 2
  pyhon
  '''
+ 
