@@ -64,36 +64,39 @@ def getMerged(get_list1,get_list2):
 
 #Driver-Code  
 if __name__ == "__main__":
- 
-  A = list(map(int , input().split(' ')))
-  B = list(map(int , input().split(' ')))
-  N = int(input())
-
-  a = len(A)
-  b = len(B)
-  
-  #Initializing an output array
-  output = [0]*N
-  len1=0
-  while (len1<=N):
-      #Checking the condition because that will not suffice our answer
-      if len1>a or (N-len1)>b: 
-          len1+=1
-          continue 
-      #Get the maximum possible number and get it merged 
-      get_list1 = getMax(A, len1)
-      get_list2 = getMax(B, (N-len1))           
-      output = max(output, getMerged(get_list1,get_list2))
-      len1+=1
+    
+    #Input two list of integers
+    A = list(map(int , input().split(' ')))
+    B = list(map(int , input().split(' ')))
+    
+    #Input N : length of the maximum number to be made
+    N = int(input())
+    
+    a = len(A)
+    b = len(B)
       
-  #Creating list of string items 
-  output = [str(item) for item in output]
-
-  # Join list items using join()
-  answer = int("".join(output))
-
-  print(answer)
-  
+    #Initializing an output array
+    output = [0]*N
+    len1=0
+    while (len1<=N):
+        #Checking the condition because that will not suffice our answer
+        if len1>a or (N-len1)>b: 
+            len1+=1
+            continue 
+        #Get the maximum possible number and get it merged 
+        get_list1 = getMax(A, len1)
+        get_list2 = getMax(B, (N-len1))           
+        output = max(output, getMerged(get_list1,get_list2))
+        len1+=1
+          
+    #Creating list of string items 
+    output = [str(item) for item in output]
+    
+    # Join list items using join()
+    answer = int("".join(output))
+    
+    print(answer)
+      
   
 """
 Sample Test Cases
@@ -109,3 +112,4 @@ Time Complexity : O((a+b)^3))
 """
   
   
+
