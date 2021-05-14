@@ -25,9 +25,12 @@ def special(a):
 #Driver's Code
 def main():
     n=int(input("Enter a number to check special or not\n"))
-    s=special(n)
-    if s==1:
-        print("It is a special number")
+    if n>0:
+        s=special(n)
+        if s==1:
+            print("It is a special number")
+        else:
+            print("It is not a special number")
     else:
         print("It is not a special number")
 if __name__=="__main__":
