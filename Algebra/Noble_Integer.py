@@ -27,7 +27,7 @@ else:
 Sample Output
 Enter the number of elements:4
 Enter the elements:7 3 9 81
-3
+Noble Integer = 3
 
 '''
 
