@@ -105,6 +105,7 @@
   - Z Algorithm
   - Rabin-Karp Algorithm
   - Concatenation of two strings 
+  - Remove Duplicate Letters
 </details>
 
 ##
