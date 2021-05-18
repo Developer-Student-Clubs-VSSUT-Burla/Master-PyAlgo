@@ -24,22 +24,22 @@ Elements on right and left of the pivot may or may not be arranged in a sorted m
  
     while True:
    
-#moving high towards left
+
         while low <= high and array[high] >= pivot:
             high = high - 1
  
-#moving low towards right 
+
         while low <= high and array[low] <= pivot:
             low = low + 1
  
-#checking if low and high have crossed
+
         if low <= high:
  
-#swapping values to rearrange
+
             array[low], array[high] = array[high], array[low]
           
         else:
-#breaking out of the loop if low > high
+
             break
  
 #swapping pivot with high so that pivot is at its right # #position 
@@ -51,7 +51,7 @@ Elements on right and left of the pivot may or may not be arranged in a sorted m
 If low is greater than high we break out of the loop and return high as the position of pivot element.
 This means that we have successfully arranged the values around the pivot.
     '''
-#returning pivot position
+
     return high
  
 '''
