@@ -13,7 +13,7 @@ len is used to get the length of the name
 .upper() is used to convert all the letters in uppercase
 .title() is to print first character in capital
 """
-def name(s):
+def name(n):
     
     # split the string into a list  
     l = s.split()
