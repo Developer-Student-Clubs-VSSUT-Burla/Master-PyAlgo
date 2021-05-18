@@ -103,7 +103,8 @@
   - Lydon Factorization
   - Z Algorithm
   - Rabin-Karp Algorithm
-  - Concatenation of two strings 
+  - Concatenation of two strings
+  - Initials of name
 </details>
 
 ##
