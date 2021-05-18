@@ -16,25 +16,24 @@ len is used to get the length of the name
 def name(n):
     
     # split the string into a list  
-    l = s.split()
+    l = n.split()
     new = "" 
    
     # traverse in the list
     for i in range(len(l)-1):
-        s = l[i]
+        n = l[i]
         
         # adds the capital first character
-        new += (s[0].upper()+'.')
+        new += (n[0].upper()+'.')
     
     # adds the capital first character l[-1] gives last item of list l. 
     new += l[-1].title() # title function to print first character in capital.      
     return new      
+
+# Driver code 
 n=input("Enter full name: ")
 print(name(n))
 """        
-Average Time complexity: O(pattern length + text length)
-Space complexity: O(1) 
-
 #SAMPLE 1-
 INPUT-
 Enter full name: pilavullakandi thekkeparambil usha
