@@ -106,6 +106,7 @@
   - Rabin-Karp Algorithm
   - Concatenation of two strings
   - Initials of name
+  - Longest Prefix Suffix
 </details>
 
 ##
