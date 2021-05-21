@@ -14,9 +14,9 @@ Constraints:
 
 
 """
-print("Enter the values for nums to store in an array:")
+print(" Enter the values for nums to store in an linkedist :")
 nums=list(map(int,input().split()))
-print("Enter the value of val:")
+print("Enter the value of val to delete :")
 val=int(input())
 
 class Solution:
@@ -27,6 +27,7 @@ class Solution:
             nums.remove(val)
             i+=1
         print(nums)
+        
         
 s = Solution()
 s.removeElement(nums, val) 
