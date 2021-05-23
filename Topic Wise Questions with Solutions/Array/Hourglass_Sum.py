@@ -10,7 +10,7 @@ Given a 6X6 2D Array, A:
 An hourglass in A is a subset of values with indices falling in this pattern 
 in A's graphical representation:
 a b c
-d
+  d
 e f g
 
 There are 16 hourglasses in A, and an hourglass sum is the sum of an hourglass' 
