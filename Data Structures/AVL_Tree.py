@@ -4,6 +4,7 @@ all nodes and if at any time they differ by more than one, rebalancing is done t
 called a balance factor whose value is either -1, 0 or +1 where balance factor of a node in an AVL tree is the difference between the height of 
 the left subtree and that of the right subtree of that node.
 """
+
 class avlnode:
     def __init__(self, value):
         self.left = None
@@ -39,7 +40,6 @@ class avltree():
         else:
             return 0
 
-    # Rotate left (RL)
     def rotate_left(self):
         old_root = self.node
         new_root = self.node.right.node
@@ -49,7 +49,6 @@ class avltree():
         old_root.right.node = new_right
         new_root.left.node = old_root
 
-    #Rotate right (RR)
     def rotate_right(self):
         old_root = self.node
         new_root = self.node.left.node
@@ -64,10 +63,8 @@ class avltree():
         self.compute_height(recursive=False)
         self.balance(recursive=False)
 
-        # For each node if balance is -1, 0 or 1 no rotation is required
         while self.balancefactor < -1 or self.balancefactor > 1:
 
-            # Left subtree is bigger than right subtree
             if self.balancefactor > 1:
 
                 if self.node.left.balancefactor < 0:
@@ -80,7 +77,6 @@ class avltree():
                 self.compute_height()
                 self.balance()
 
-            # Right subtree is bigger than left subtree
             if self.balancefactor < -1:
 
                 if self.node.right.balancefactor > 0:
@@ -94,8 +90,7 @@ class avltree():
                 self.balance()
 
     def compute_height(self, recursive=True):
-        # Height is max height of either left or right subtree =1 for root
-
+    
         if self.node:
             if recursive:
                 if self.node.left:
