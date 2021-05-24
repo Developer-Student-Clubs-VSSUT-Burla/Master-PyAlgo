@@ -4,6 +4,7 @@ To get nodes of BST in non-increasing order, a variation of Inorder traversal wh
 Preorder traversal is used to create a copy of the tree. 
 Preorder traversal is also used to get prefix expression on of an expression tree.
 '''
+
 class Node:
     def __init__(self):
         self.data=None
@@ -53,12 +54,19 @@ def display(node):
     display(node.right)
 
 
-preorder = [20, 10, 5, 15, 30, 25, 35]
-inorder = [5, 10, 15, 20, 25, 30, 35]
+# preorder = [20, 10, 5, 15, 30, 25, 35]
+# inorder = [5, 10, 15, 20, 25, 30, 35]
+preorder = list(map(int,input("Enter the numbers for preorder :").strip().split()))
+inorder = list(map(int,input("\nEnter the numbers for inorder : ").strip().split()))
+print()
 binaryTree=BinaryTree(preorder, inorder)
 display(binaryTree.root)
+
 '''
 Sample Output
+Enter the numbers for preorder : 20 10 5 15 30 25 35
+
+Enter the numbers for inorder : 5 10 15 20 25 30 35
 
 10 -> 20 <- 30
 5 -> 10 <- 15
