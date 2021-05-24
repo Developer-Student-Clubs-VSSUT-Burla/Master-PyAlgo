@@ -103,10 +103,6 @@ class avltree():
         else:
             self.height = -1
 
-
-    """
-    balance - Balance = height (left subtee ) - height (right subtree)
-    """
     def balance(self, recursive=True):
 
         if self.node:
@@ -121,9 +117,7 @@ class avltree():
             self.balancefactor = 0
 
     def inorder_traversal(self):
-        """
-        Left tree nodes , root , right tree nodes 
-        """
+
         if not self.node:
             return []
 
@@ -141,9 +135,7 @@ class avltree():
         return result
         
     def preorder_traversal(self):
-        """
-        root, Left tree nodes , right tree nodes 
-        """
+ 
         if not self.node:
             return []
             
@@ -183,9 +175,8 @@ if __name__ == "__main__":
     tree = avltree()
     data = []
     i=0
-    print("Enter the number of nodes in a tree -")
-    num = int(input())
-    print("Enter the values of the nodes - ")
+    num = int(input("Enter the number of nodes in a tree :"))
+    print("Enter the values of the nodes")
     for i in range(0,num):
         val = int(input())
         data.append(val)
@@ -193,14 +184,15 @@ if __name__ == "__main__":
     for value in data:
         tree.insert(value)
 
-    print('In order traversal ', tree.inorder_traversal())
-    print('Preorder traversal ', tree.preorder_traversal())
-    print('Postorder traversal ', tree.postorder_traversal())
+    print('In order traversal :', tree.inorder_traversal())
+    print('Preorder traversal :', tree.preorder_traversal())
+    print('Postorder traversal :', tree.postorder_traversal())
     
 '''
-Enter the number of nodes in a tree -
-10
-Enter the values of the nodes - 
+Sample Output
+
+Enter the number of nodes in a tree :10
+Enter the values of the nodes 
 10
 20
 40
@@ -211,7 +203,9 @@ Enter the values of the nodes -
 44
 22 
 18
-('In order traversal ', [10, 18, 20, 22, 30, 40, 44, 50, 60, 80])
-('Preorder traversal ', [40, 20, 10, 18, 30, 22, 60, 50, 44, 80])
-('Postorder traversal ', [18, 10, 22, 30, 20, 44, 50, 80, 60, 40])
+In order traversal : [10, 18, 20, 22, 30, 40, 44, 50, 60, 80])
+Preorder traversal : [40, 20, 10, 18, 30, 22, 60, 50, 44, 80])
+Postorder traversal : [18, 10, 22, 30, 20, 44, 50, 80, 60, 40])
+
+'''
 
