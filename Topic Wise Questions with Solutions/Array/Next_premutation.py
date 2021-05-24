@@ -19,22 +19,23 @@ output:[1, 5, 1]
 def permute(arr):
     #if the arr is smaller than 2 return the arr same 
     if len(arr)<2:
-        return arr
-    
+        return arr.reverse()
+
     inverse=len(arr)-2
     #if the array element start larger value then inverse the array 
     while inverse>=0 and arr[inverse]>=arr[inverse+1]:
         inverse-=1
     
-    if inverse<0:
-        return 
+    if inverse==-1:
+        return arr.reverse()
     
     #checking the value  larger value swap the poistion with smaller element  
-    for i in reversed(range(inverse, len(arr))):
+    for i in range(len(arr)-1 ,inverse,-1):
         if arr[i]>arr[inverse]:
             arr[i], arr[inverse]=arr[inverse],arr[i]
             break
     arr[inverse+1:]= reversed(arr[inverse+1:])
+    
     #result 
     return arr
 
@@ -43,8 +44,8 @@ if __name__ == "__main__":
     print(permute(arr))
 
 '''
-Time Complexcity: O(n)
-Space Complexcity: O(1)
+Time Complexcity: O(n^2)
+Space Complexcity: O(n^2)
 
 INPUT:
 Enter the list: 
