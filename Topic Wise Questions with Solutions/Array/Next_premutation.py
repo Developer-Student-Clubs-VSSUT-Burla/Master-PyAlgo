@@ -26,8 +26,8 @@ def permute(arr):
     while inverse>=0 and arr[inverse]>=arr[inverse+1]:
         inverse-=1
     
-    if inverse==-1:
-        return arr.reverse()
+    if inverse==-1:  
+        return sorted(arr)
     
     #checking the value  larger value swap the poistion with smaller element  
     for i in range(len(arr)-1 ,inverse,-1):
