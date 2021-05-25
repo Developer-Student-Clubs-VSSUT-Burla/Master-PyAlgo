@@ -19,7 +19,7 @@ output:[1, 5, 1]
 def permute(arr):
     #if the arr is smaller than 2 return the arr same 
     if len(arr)<2:
-        return arr.reverse()
+        return arr
 
     inverse=len(arr)-2
     #if the array element start larger value then inverse the array 
