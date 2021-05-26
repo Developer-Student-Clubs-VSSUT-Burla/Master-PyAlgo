@@ -58,3 +58,16 @@ def main():
 
 
 main()
+'''
+Sample I/O and O/P
+5
+Q _ _ _ _ 
+_ _ _ Q _ 
+_ Q _ _ _ 
+_ _ _ _ Q 
+_ _ Q _ _
+
+
+TIME COMPLEXITY OF N-QUEEN PROBLEM IS O(N!)
+SPACE COMPLEXITY OF N-QUEEN PROBLEM IS O(N)
+'''
