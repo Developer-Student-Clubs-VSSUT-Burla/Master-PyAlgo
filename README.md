@@ -7,7 +7,7 @@
 ---
 
 ### Templates
-- The [Master Template](templates/template.py) works with all versions of Python and has Python 3 behaviour.
+- The [Master Template](templates/template.py) works with all versions of Python and has Python 3 behavior.
 - Version Specific Templates: [PyPy 2](templates/template_pypy2.py), [Python 3](templates/template_py3.py)
 
 ##
@@ -66,7 +66,7 @@
   <summary>Graphs</summary>
 
   - Bellman-Ford Algorithm
-  - Breadth First Search
+  - Breadth-First Search
   - Connected Components Search
   - Brent's Algorithm for Cycle Detection
   - Depth First Search
