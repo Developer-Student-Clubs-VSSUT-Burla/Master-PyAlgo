@@ -66,10 +66,13 @@ def getMerged(get_list1,get_list2):
 if __name__ == "__main__":
     
     #Input two list of integers
+    print("Input First list Numbers:")
     A = list(map(int , input().split(' ')))
+    print("Input Second list Numbers:")
     B = list(map(int , input().split(' ')))
     
     #Input N : length of the maximum number to be made
+    print("Input the length of the maximum number to be made:")
     N = int(input())
     
     a = len(A)
@@ -95,21 +98,23 @@ if __name__ == "__main__":
     # Join list items using join()
     answer = int("".join(output))
     
+    print("Maximum possible number of size " + str(N))
     print(answer)
       
   
 """
 Sample Test Cases
 Example #1:
-Input: A = [8,9], B = [1,0], N = 4
+Input: A = [8 9] B = [1 0] N = 4
 Output: 8910
 
 Example #2:
-Input: A = [1,7], B= [9,5], N = 3
+Input: A = [1 7] B= [9 5] N = 3
 Output: 975
 
 Time Complexity : O((a+b)^3))
 """
   
   
+
 
