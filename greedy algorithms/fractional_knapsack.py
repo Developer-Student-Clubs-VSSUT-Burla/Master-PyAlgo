@@ -62,12 +62,13 @@ if __name__ == '__main__':
     capacity = int(input("Entre Capacity of the knapsack"))
     fractional_knapsack(profit, weight, capacity)
 
-
-# Entre Profit Value : 12 8 9 6 14 30
-# Entre weight  Values  : 98 45 32 69 10 3
-# Entre Capacity of the knapsack28
-# Fractional Knapsack
-# Profit :30              Weight  : 3             Profit/Weight : 10.0
-# Profit :14              Weight  : 10            Profit/Weight : 1.4
-# Profit :9               Weight  : 32            Profit/Weight : 0.28125
-# Total Profit : 48.21875
+"""
+Entre Profit Value : 12 8 9 6 14 30
+Entre weight  Values  : 98 45 32 69 10 3
+Entre Capacity of the knapsack28
+Fractional Knapsack
+Profit :30              Weight  : 3             Profit/Weight : 10.0
+Profit :14              Weight  : 10            Profit/Weight : 1.4
+Profit :9               Weight  : 32            Profit/Weight : 0.28125
+Total Profit : 48.21875
+"""
