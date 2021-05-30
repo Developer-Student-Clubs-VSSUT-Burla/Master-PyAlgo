@@ -90,6 +90,7 @@
   - Polynomial Interpolation
   - Integer Roots
   - Binary Search
+  - Perfect Number 
 </details>
 
 <details>
