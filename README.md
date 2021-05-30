@@ -90,6 +90,7 @@
   - Polynomial Interpolation
   - Integer Roots
   - Binary Search
+  - Happy Number
 </details>
 
 <details>
