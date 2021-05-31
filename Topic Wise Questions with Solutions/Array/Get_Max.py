@@ -105,11 +105,21 @@ if __name__ == "__main__":
 """
 Sample Test Cases
 Example #1:
-Input: A = [8 9] B = [1 0] N = 4
+Input:
+Input First list Numbers:
+8 9
+Input Second list Numbers:
+1 0 
+Maximum possible number of size 4
 Output: 8910
 
 Example #2:
-Input: A = [1 7] B= [9 5] N = 3
+Input:
+Input First list Numbers:
+1 7
+Input Second list Numbers:
+9 5 
+Maximum possible number of size 3
 Output: 975
 
 Time Complexity : O((a+b)^3))
