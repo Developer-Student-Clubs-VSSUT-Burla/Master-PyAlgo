@@ -3,7 +3,7 @@ This problem is to find an arrangement of N queens on a chess board, such that n
 The chess queens can attack in any direction as horizontal, vertical, horizontal and diagonal way.
 A matrix is used to display the positions of N Queens, where no queens can attack other queens.
 '''
-N = int(input())
+N = int(input("enter Number of rows :"))
 '''
 printing the solution
 '''
