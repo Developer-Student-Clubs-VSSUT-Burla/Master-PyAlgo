@@ -44,8 +44,7 @@ def fractional_knapsack(p, w, capacity):
             break
 
     if capacity > 0:
-        max_profit += capacity * \
-            (new_list[fractional_val][0])/(new_list[fractional_val][1])
+        max_profit += capacity * (new_list[fractional_val][0])/(new_list[fractional_val][1])
 
     o = len(table_profit)
     print("Fractional Knapsack")
