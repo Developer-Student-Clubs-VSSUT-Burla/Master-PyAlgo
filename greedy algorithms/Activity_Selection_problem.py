@@ -24,17 +24,17 @@ def activity_selection_prob(s,f,n):
 
 
 if __name__ == '__main__':
-    c= int(input("Entre Range Of Activities"))
+    c= int(input("Enter Range Of Activities"))
     start = [0]*c
     finish = [0]*c
     while(1):
-        print("1.Entre  Activity\t2.Exit")
+        print("1.Enter  Activity\t2.Exit")
         ch  = int(input("Entre Choice"))
         if ch == 2:
             break
         elif ch ==1:
             for i in range(0,c):
-                print("Entre Start value And finish Value")
+                print("Enter Start value And finish Value")
                 a = int(input("Start ?"))
                 b = int(input("finish ?"))
                 start[i],finish[i] = a,b
@@ -45,18 +45,18 @@ if __name__ == '__main__':
 
 """
 Entre Range Of Activities4                                                                                              
-1.Entre  Activity       2.Exit                                                                                          
+1.Enter  Activity       2.Exit                                                                                          
 Entre Choice1
-Entre Start value And finish Value                                                                                      
+Enter Start value And finish Value                                                                                      
 Start ?5                                                                                                               
 finish ?9
-Entre Start value And finish Value                                                                                      
+Enter Start value And finish Value                                                                                      
 Start ?1                                                                                                                
 finish ?6                                                                                                              
-Entre Start value And finish Value                                                                                      
+Enter Start value And finish Value                                                                                      
 Start ?1                                                                                                                
 finish ?9                                                                                                              
-Entre Start value And finish Value                                                                                      
+Enter Start value And finish Value                                                                                      
 Start ?5                                                                                                                
 finish ?8                                                                                                               
 Following Activities Are selected :                                                                                     
