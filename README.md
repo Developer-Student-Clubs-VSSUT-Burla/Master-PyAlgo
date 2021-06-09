@@ -79,6 +79,7 @@
   - Prim's Algorithm
   - Tarjan's Algorithm
   - Topological Sorting
+  - Bipartite Graph
 </details>
 
 <details>
